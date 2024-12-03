@@ -1,0 +1,178 @@
+/* Navigation Bar */
+nav {
+    position: sticky;
+    top: 0;
+    background: #2F4F4F;
+    padding: 10px;
+    z-index: 1000;
+}
+
+nav ul {
+    display:flex;
+    justify-content: space-around;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #FFA07A;
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #A8D5BA;
+}
+
+/* Blog Section */
+#blog {
+    padding: 40px 20px;
+    background-color: #FFF7E6;
+    color: #2F4F4F;
+}
+
+.blog-post {
+    margin: 20px 0;
+    padding: 15px;
+    border: 1px solid #A8D5BA;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.blog-post h3 {
+    margin-bottom: 10px;
+    color: #2F4F4F;
+}
+
+.blog-post a {
+    color: #FFA07A;
+    text-decoration: underline;
+}
+
+.blog-post a:hover {
+    color: #A8D5BA;
+}
+
+/* Maps Section*/
+#maps {
+    padding: 40px 20px;
+    background-color: #F5F5DC;
+    color: #2F4F4F;
+    text-align: center;
+    height: 500px; 
+
+}
+
+#map { 
+height: 500px;
+width:100%;
+position: relative;
+overflow: hidden;
+opacity: 0.85;
+border:2px solid #f0f0f0;
+}
+
+.map-container {
+    margin-top: 20px;
+}
+
+/* General Branding Information */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #FAF3E0;
+    color: #2F4F4F;
+    overflow-x: hidden;
+}
+
+.front-page-image  {
+    width: 100%; /* Scale the image to fit the container */
+    max-width: 1200px; /* Limit the maximum width */
+    height: auto; /* Maintain the aspect ratio */
+    display: block; /* Avoid extra space below the image */
+    margin: 0 auto; /* Center the image if needed */
+}
+
+/* Hero Section */
+.hero {
+    background-color: #2F4F4F;
+    color: #FFA07A;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.hero h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.cta-button {
+    background-color: #FFA07A;
+    color: #2F4F4F;
+    padding: 10px 20px; 
+    text-decoration: none;
+    font-size: 1.1em;
+    border-radius: 5px;
+}
+
+.cta-button:hover {
+    background-color: #A8D5BA;
+    color: #2F4F4F;
+}
+
+/* About Section */
+#about, #cta {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #F5F5DC;
+    color: #2F4F4F;
+}
+
+#about h2, #cta h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.front-page-image {
+    width: 250px;
+    height: 250px;
+    margin: auto;
+}
+
+/* Footer */
+footer {
+    background-color: #8B4513;
+    color: #A8D5BA;
+    text-align: center;
+    padding: 20px;
+}
+
+footer a {
+    color: #FFA07A;
+    text-decoration: none;
+}
+
+footer a:hover{
+    text-decoration: underline;
+}
+
+/* Animations */
+[data-aos] {
+    opacity: 0;
+    transition-property: opacity, transform;
+    transition-duration: 1s;
+    transition-timing-function: ease;
+}
